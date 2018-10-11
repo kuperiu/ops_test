@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SuchController {
 
-	@Value("${suchname}") private String suchName;
+	@Value("${availabilityZone}") private String availabilityZone;
 
 	@RequestMapping("/hello")
 	public String suchHello(){
-		return "hello " + suchName;
+		return availabilityZone;
 	}
 }
