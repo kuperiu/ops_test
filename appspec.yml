@@ -1,0 +1,18 @@
+version: 0.0
+os: linux
+files:
+  # - source: Config/config.txt
+  #   destination: /tmp/Config
+hooks:
+  # BeforeInstall:
+     - location: Scripts/install_dep.sh
+  AfterInstall:
+    - location: Scripts/clone.sh
+      timeout: 180
+  ApplicationStart:
+    - location: Scripts/start.sh.sh
+      timeout: 3600
+  ValidateService:
+    - location: Scripts/validate.sh
+      timeout: 3600
+      runas: ubuntu
