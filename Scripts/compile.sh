@@ -7,3 +7,7 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 echo "availabilityZone=$availability_zone" > $prop_file
+./mvnw package
+if [ $? -ne 0 ]; then
+    exit 1
+fi

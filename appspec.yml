@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 hooks:
   AfterInstall:
-    - location: Scripts/clone.sh
+    - location: Scripts/compile.sh
       timeout: 60
       runas: root
   ApplicationStart:
