@@ -6,7 +6,7 @@ hooks:
       timeout: 60
       runas: root
   ApplicationStart:
-    - location: Scripts/start.sh.sh
+    - location: Scripts/start.sh
       timeout: 60
       runas: root
   ValidateService:
