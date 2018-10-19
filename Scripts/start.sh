@@ -5,4 +5,4 @@ cd /app/ops_test
 if [ $? -ne 0 ]; then
     exit 1
 fi
-sleep 15
+sleep 60
