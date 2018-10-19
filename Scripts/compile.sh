@@ -7,4 +7,4 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 echo "availabilityZone=$availability_zone" >> $prop_file
-echo "url=http://microservice-b-704943846.eu-central-1.elb.amazonaws.com/" >> $prop_file
+echo "url=http://internal-microservice-B-1878017936.eu-central-1.elb.amazonaws.com/" >> $prop_file
