@@ -13,7 +13,3 @@ hooks:
     - location: Scripts/validate.sh
       timeout: 60
       runas: root
-  BeforeBlockTraffic:
-    - location: Scripts/echo.sh
-      timeout: 60
-      runas: root
