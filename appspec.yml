@@ -2,8 +2,8 @@ version: 0.0
 os: linux
 hooks:
   ApplicationStop:
-    - location: Scripts/elb/deregister_from_elb.sh
-    - location: Scripts/elb/stop_httpd.sh
+    - location: Scripts/deregister_from_elb.sh
+    - location: Scripts/stop_httpd.sh
       runas: root
   AfterInstall:
     - location: Scripts/compile.sh
@@ -13,9 +13,9 @@ hooks:
     - location: Scripts/start.sh
       timeout: 180
       runas: root
-    - location: Scripts/elb/start_httpd.sh
+    - location: Scripts/start_httpd.sh
       runas: root
-    - location: Scripts/elb/register_with_elb.sh
+    - location: Scripts/register_with_elb.sh
   ValidateService:
     - location: Scripts/validate.sh
       timeout: 60
