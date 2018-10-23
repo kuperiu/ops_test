@@ -21,8 +21,8 @@ echo """
         ErrorLog ${APACHE_LOG_DIR}/error.log
         CustomLog ${APACHE_LOG_DIR}/access.log combined
         ProxyPreserveHost on
-        ProxyPass /hello http://127.0.0.1:8090/
-        ProxyPassReverse /hello http://127.0.0.1:8090/
+        ProxyPass / http://127.0.0.1:8080/hello
+        ProxyPassReverse / http://127.0.0.1:8080/hello
 
         # For most configuration files from conf-available/, which are
         # enabled or disabled at a global level, it is possible to
